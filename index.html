@@ -56,11 +56,11 @@
     }
 
     .box {
-      overflow:hidden;
-      text-overflow:ellipsis;
-      display:-webkit-box;
-      -webkit-line-clamp:3;
-      -webkit-box-orient:vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
   </style>
 </head>
@@ -70,17 +70,24 @@
   <nav class="navbar navbar-inverse">
     <div class="header-container">
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <img src="images/logo.png" style="float: left;width: 42px;margin-top: 4px;">
         <a class="navbar-brand" href="#" style="color: white;font-size: 48px;"><b>VIVID</b></a>
       </div>
-      <div class="text-right">
-        <nav>
-          <ul class="nav masthead-nav">
-            <li class="active"><a href="#">HOME</a></li>
-            <li><a href=product.html>PRODUCT</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <!--
-            <li class="dropdown">
+      <div id="navbar" class="navbar-collapse collapse">
+
+        <ul class="nav nav masthead-nav navbar-right ">
+          <li class="active"><a href="#">HOME</a></li>
+          <li><a href=product.html>PRODUCT</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <!--
+            <li class="dropdown">masthead-nav
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                 aria-expanded="false">LINKS <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -89,8 +96,8 @@
 
               </ul>
             </li>-->
-          </ul>
-        </nav>
+        </ul>
+
       </div>
       <!--/.navbar-collapse -->
     </div>
@@ -124,14 +131,19 @@
         </div>
 
         <div style="margin: 160px 100px;text-align: left;">
-          <a href="https://play.google.com/store/apps/details?id=com.telenav.launcher"><img src="images/googleplay.png" style="height:60px;margin-right: 40px;"/></a>
-          <a href="https://play.google.com/store/apps/details?id=com.telenav.launcher"><img src="images/download-apk.png" style="height:60px;margin-left: 0px;"/></a>
+          <a href="https://play.google.com/store/apps/details?id=com.telenav.launcher"><img src="images/googleplay.png"
+              style="height:60px;margin-right: 40px;" /></a>
+          <a href="https://play.google.com/store/apps/details?id=com.telenav.launcher"><img
+              src="images/download-apk.png" style="height:60px;margin-left: 0px;" /></a>
         </div>
 
       </div>
 
       <div class="col-md-5" style="transform: translateY(50%);">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/40gvsWOdgQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/40gvsWOdgQ4" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
 
     </div>
@@ -158,7 +170,7 @@
     </div>
 
     <div class="row" style="margin-top: 50px">
-      <div class="col-md-1" >
+      <div class="col-md-1">
       </div>
       <div class="col-md-5">
         <img src="images/media-control.png" width="80%" class="img-rounded" />
@@ -184,19 +196,21 @@
                         line-height: 29px;
                         ">
           <li style="text-align:left;line-height: 29px;">Integrated USB music player</li>
-          <li style="text-align:left;line-height: 29px;">Control and interact with all 3rd party streaming musics and podcasts</li>
+          <li style="text-align:left;line-height: 29px;">Control and interact with all 3rd party streaming musics and
+            podcasts</li>
           <li style="text-align:left;line-height: 29px;">Media sources switch easily</li>
           <li style="text-align:left;line-height: 29px;">Autoplay function when boot based on your settings</li>
-          <li style="text-align:left;line-height: 29px;">Radio and BT music integrated if your headunit is supported</li>
+          <li style="text-align:left;line-height: 29px;">Radio and BT music integrated if your headunit is supported
+          </li>
         </div>
 
       </div>
-      <div class="col-md-1" >
+      <div class="col-md-1">
       </div>
     </div>
 
     <div class="row" style="margin-top: 50px">
-      <div class="col-md-1" >
+      <div class="col-md-1">
       </div>
       <div class="col-md-5" style="margin-top: 80px;margin-left: 10px;">
         <div style="font-family: 'Lato';
@@ -223,18 +237,18 @@
 
       </div>
 
-      <div class="col-md-5" >
+      <div class="col-md-5">
         <img src="images/multiple-theme.png" width="80%">
       </div>
-      <div class="col-md-1" >
+      <div class="col-md-1">
       </div>
     </div>
 
     <div class="row" style="margin-top: 50px">
 
-      <div class="col-md-1" >
+      <div class="col-md-1">
       </div>
-      <div class="col-md-5" >
+      <div class="col-md-5">
         <img src="images/customizable.png" width="80%" />
       </div>
 
@@ -262,7 +276,7 @@
         </div>
 
       </div>
-      <div class="col-md-1" >
+      <div class="col-md-1">
       </div>
 
     </div>
@@ -324,10 +338,10 @@
           <div class=“” style="background: #38424E;border-radius: 10px;">
             <div class="row">
               <div class="col-md-2">
-                <img src="images/picture.png" width="48px" style="margin: 20px;">
+                <img src="images/picture.png" width="48px" style="margin-left: 20px;margin-top: 20px;">
               </div>
 
-              <div class="col-md-8" style="margin: left 25px;">
+              <div class="col-md-8" style="margin-left: 25px;">
                 <div class="username">
                   <p class="text-left">Staticxxx</p>
                 </div>
@@ -354,10 +368,10 @@
           <div class=“” style="background: #38424E;border-radius: 10px;">
             <div class="row">
               <div class="col-md-2">
-                <img src="images/picture.png" width="48px" style="margin: 20px;">
+                <img src="images/picture.png" width="48px" style="margin-left: 20px;margin-top: 20px;">
               </div>
 
-              <div class="col-md-8" style="margin: left 25px;">
+              <div class="col-md-8" style="margin-left: 25px;">
                 <div class="username">
                   <p class="text-left">Parfetto</p>
                 </div>
@@ -371,12 +385,12 @@
             </div>
             <div class="row">
               <div class="user-reply">
-                   <div class="box"> 
-                    Very nice launcher
-                    May I suggest some modification at home screen?
-                    Why can't we chose as example, Radio or other app as we wish for the righ side.
-                    In my case I basicly don't use music APP, only use Radio...
-                   </div>
+                <div class="box">
+                  Very nice launcher
+                  May I suggest some modification at home screen?
+                  Why can't we chose as example, Radio or other app as we wish for the righ side.
+                  In my case I basicly don't use music APP, only use Radio...
+                </div>
               </div>
             </div>
           </div>
@@ -387,10 +401,10 @@
           <div class=“” style="background: #38424E;border-radius: 10px;">
             <div class="row">
               <div class="col-md-2">
-                <img src="images/picture.png" width="48px" style="margin: 20px;">
+                <img src="images/picture.png" width="48px" style="margin-left: 20px;margin-top: 20px;">
               </div>
 
-              <div class="col-md-8" style="margin: left 25px;">
+              <div class="col-md-8" style="margin-left: 25px;">
                 <div class="username">
                   <p class="text-left">Ycvitamin</p>
                 </div>
@@ -404,21 +418,23 @@
             </div>
             <div class="row">
               <div class="user-reply">
-                  <div class="box">
-                    First of all I want like to thank you for this great launcher, I really like the simplicity and oem feel it has.
-                    I am using the Dasaita ROM with Vivid launcher included in the ROM. The OTA update of the launcher worked perfectly!
-                  </div>
+                <div class="box">
+                  First of all I want like to thank you for this great launcher, I really like the simplicity and oem
+                  feel it has.
+                  I am using the Dasaita ROM with Vivid launcher included in the ROM. The OTA update of the launcher
+                  worked perfectly!
+                </div>
               </div>
             </div>
           </div>
         </div>
 
 
-   
-   
 
 
-      
+
+
+
 
       </div>
       <!--End 用户评价-->
@@ -437,10 +453,15 @@
       /* White/900 */
       
       color: #FFFFFF;">
-      FAQs
+        FAQs
       </div>
-</div>
+    </div>
 
+    <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://fastly.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.35/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://fastly.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.35/dist/js/bootstrap.min.js"></script>
 
 </body>
 
