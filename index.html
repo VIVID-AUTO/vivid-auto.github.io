@@ -9,10 +9,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon"
-    href="https://assets-global.website-files.com/5be029bd327a5bbae24d1276/5bf41a915d89dd9b2a405b00_favicon.png">
-
-
+  <link rel="icon" href="https://assets-global.website-files.com/5be029bd327a5bbae24d1276/5bf41a915d89dd9b2a405b00_favicon.png">
   <title>VIVID Launcher</title>
 
   <!-- Bootstrap core CSS -->
@@ -128,8 +125,8 @@
 
   <!--header -->
   <div
-    style="width: 100%;height: auto;aspect-ratio:1440/510;background: linear-gradient(180deg, #38424E 0%, #050810 100%);margin-top: -20px;">
-    <div class="row">
+    style="width: 100%;height: auto;aspect-ratio:1440/710;background: linear-gradient(180deg, #38424E 0%, #050810 100%);margin-top: -20px;">
+    <div class="row" style="background-image: url(images/background.png); background-size: auto;">
       <div class="col-md-7">
         <div style="position: static;
                
@@ -169,11 +166,10 @@
           allowfullscreen></iframe>
       </div> -->
       <div class="col-md-5" style="margin-top: 180px;">
-        <video class="video-js  vjs-big-play-centered"  controls 
-                width="100%" height="100%" preload="auto" poster="images/multiple-theme.png">
-             <source src="/Users/luojin/Downloads/vivid-promo02.mp4" type="video/mp4"></source>
-        </video>
-
+        <video id= "my-video" class="video-js  vjs-big-play-centered"  onclick="playOrPause()"
+                width="100%" height="100%" preload="auto" poster="images/play.png">
+             <source src="/Users/luojin/Downloads/vivid-promo02.mp4" type="video/mp4"></source>  
+          </video>
       </div>
 
 
@@ -644,6 +640,18 @@
        </div>
   </div> -->
   
+   <script type = "text/javascript">
+       function playOrPause(){
+         var myvideo = document.getElementById("my-video");
+         if(myvideo.paused){
+           myvideo.play();
+         }else{
+           myvideo.pause();
+         }
+       }   
+   </script>
+
+
   <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
       integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
       crossorigin="anonymous"></script>
@@ -653,3 +661,4 @@
 </body>
 
 </html>
+
